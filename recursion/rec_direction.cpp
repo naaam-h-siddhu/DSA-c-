@@ -12,6 +12,8 @@ void dec(int n){
   dec(n-1);
 
 }
+
+//the code will go towards base case
 void inc(int n){
   if(n==0)
     return ;
@@ -19,6 +21,8 @@ void inc(int n){
   cout<<n<<" ";
 
 }
+//jab bhi code recusive function ke baad likha ho then the code will from away from the base case
+
 
 int main(){
   cin.tie(0)->sync_with_stdio(0);
