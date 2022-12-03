@@ -21,7 +21,7 @@ int fact(int n){
 }
 int main(){
 	read(n);
-	cout<<fact(n)<<endl;
+	cout<<func(n)<<endl;
 		
 	return 0;
 }
