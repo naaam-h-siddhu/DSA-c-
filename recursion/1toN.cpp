@@ -6,7 +6,7 @@ using namespace std;
 #define mod 1000000007
 #define endl '\n'
 void hehe(int n){
-	
+	https://dood.yt/f/19ffk3w6ti
 	if(n==0) return;
 	cout<<n--<<" ";
 	hehe(n);

@@ -19,9 +19,8 @@ public:
     void addEdge(int u,int v){
         arr[u].pb(v);
        // arr[v].pb(u);
-
     }
-    void bfs( int s){
+    void bfs(int s){
         vector<bool> visited;
         visited.resize(V,false);
         queue<int> q;
@@ -39,9 +38,6 @@ public:
 
         }
     }
-    void dfs(int s){
-
-    }
 
 
 };
@@ -49,7 +45,7 @@ public:
 int main(){
     
     graph g(4);
-     g.addEdge(0, 1);
+    g.addEdge(0, 1);
     g.addEdge(0, 2);
     g.addEdge(1, 2);
     g.addEdge(2, 0);
