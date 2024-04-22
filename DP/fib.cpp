@@ -7,7 +7,7 @@ using namespace std;
 #define all(x) (x).begin(),(x).end()
 int f(int n, vector<int> &dp) {
 	if (n<=1) return n;
-	if(dp [n] != -1) return dp [n];
+	if(dp [n] != -1) return dp [n]; //this is the memoization technique
 	return dp[n] = f(n-1, dp) + f(n-2, dp) ;
 }
 // signed main(){
@@ -37,7 +37,8 @@ signed main(){
 	int prev2 =0;
 	int prev = 1;
 	for(int i = 2;i<=n;i++){
-		int curi = prev + prev2;
+		int curi = prev + prev2; // this ist he tabulation technique
+		
 		prev2 = prev;
 		prev = curi;
 	}

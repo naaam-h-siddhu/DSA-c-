@@ -13,6 +13,7 @@ class graph{
 public:
     graph(int V){
         this->V=V;
+    
         arr.resize(V);
 
     }

@@ -6,8 +6,9 @@ using namespace std;
 #define mod 1000000007
 #define endl '\n'
 int getIthBit(int n,int i){
-    int mask=(1<<i);
-    return (n&mask)>0 ? 1:0;
+    int mask = 1<<i-1;
+    cout<<mask;
+    return n&i ? 1:0;
 }
 void setIthBit(int &n,int i){
     int mask=(1<<i);
@@ -32,17 +33,25 @@ int b=(1<<i)-1;
 int mask= a|b;
 n=n&mask;
 }
+void swap(int &a, int &b){
+    int x = a^b;
+    b = b^x;
+    a = a^x;
+}
 int main(){
     //:w
     //cin.tie(0)->sync_with_stdio(0);
-    int n;
-    cout<<"Enter the number: "<<endl;
-    cin>>n;
-    int i;
-    cout<<"enter the pos of bit: "<<endl;
-    cin>>i;
-    clearBitInRange(n,i,3);
-    cout<<n<<endl;
+    // int n;
+    // cout<<"Enter the number: "<<endl;
+    // cin>>n;
+    // int i;
+    // cout<<"enter the pos of bit: "<<endl;
+    // cin>>i;
+    // clearBitInRange(n,i,3);
+    // cout<<n<<endl;
+    cout<<getIthBit(12,3);
+
+
     
     return 0;
 }
